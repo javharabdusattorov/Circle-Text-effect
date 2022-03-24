@@ -8,5 +8,5 @@ for(let i = 0; i < elAllElement.length; i++) {
 
 document.addEventListener("mousemove", function(e) {
     elText.style.left = e.pageX + 'px';
-    elText.style.top = e.pageY + 'px';
+    elText.style.top = 10 + e.pageY + 'px';
 })
