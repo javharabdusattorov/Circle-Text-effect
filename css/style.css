@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@500&family=IBM+Plex+Sans+Thai+Looped&family=Inconsolata:wght@500&family=Mukta&family=Nunito:wght@200;300;400;500;600&family=Press+Start+2P&family=Roboto:wght@300&family=Smooch+Sans:wght@800&family=Supermercado+One&family=Work+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+}
+
+section .text {
+    position: absolute;
+    font-size: 1.5em;
+    color: white;
+    user-select: none;
+    pointer-events: none;
+    animation: animate 7.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+section .text span {
+    position: absolute;
+    top: -100px;
+    text-transform: uppercase;
+    display: inline-block;
+    transform-origin: 0 100px ;
+}
